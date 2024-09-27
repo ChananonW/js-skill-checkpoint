@@ -9,11 +9,12 @@ inventory.apple.quantity = 200;
 inventory.orange = { price: 20, quantity: 300};
 
 let totalValue = 0;
-for (const item in inventory) {
-  if (inventory.hasOwnProperty(item)) {
+const key = Object.keys(inventory);
+
+for (const item of key) {
     const product = inventory[item];
-    totalValue += product.price * product.quantity
+    totalValue += product.price * product.quantity;
   }
-}
+
 
 console.log(`Total inventory value: ${totalValue} baht`);
