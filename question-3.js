@@ -5,7 +5,7 @@ function authenticateUser(username, password) {
   const validPassword = "securepass";
 
   return (username === validUsername && password === validPassword)
-    ? "Login SLogin successful."
+    ? "Login successful."
     : "Login failed. Please check your username and password."
 }
 
@@ -13,8 +13,8 @@ function authenticateUser(username, password) {
 const username1 = "user123";
 const password1 = "securepass";
 
-const username2 = "guest";
-const password2 = "password123";
+const username2 = "user123";
+const password2 = "12345678";
 
 console.log(authenticateUser(username1, password1)); // Login successful.
 console.log(authenticateUser(username2, password2)); // Login failed. Please check your username and password.
