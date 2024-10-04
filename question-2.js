@@ -9,10 +9,8 @@ const userTaskList = [
 
 // เริ่มเขียนโค้ดตรงนี้
 userTaskList.push({id: 5, task: "walk the dog"});
-const editTask = userTaskList.find(task => task.id === 4);
-if (editTask) {
-  editTask.task = "GO to the gym";
-}
+
+userTaskList[3].task = "Go to the gym "
 
 userTaskList.pop()
 
